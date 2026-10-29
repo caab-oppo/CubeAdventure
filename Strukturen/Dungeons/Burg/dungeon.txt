@@ -1,0 +1,32 @@
+# Burg mit Tempelteilen -- Baukasten Format 2 (Module mit Anschluessen), jedes Mal anders
+format=2
+name=Burg
+aktiv=1
+anteil=0.8
+gebiet=ueberall
+# Durchgang 7 breit, 10 hoch (Oger/Trolle passen), Wand 2 dick; Ersatzfarbe beim Zumauern
+typ=gang,7,10,2,128,128,132
+typ=aussen,7,10,2,110,106,100
+aussen=aussen
+# Module ohne Boss (zufaellig dazwischen), Mindest- und Hoechstgroesse der Grundflaeche
+module=22,32
+flaeche_min=110,110
+flaeche_max=200,200
+hoehe_max=28
+versuche=24
+zinnen=1,128,128,132
+# Grundebene zuerst (module=), danach obere Ebenen nur ueber Treppenhaeuser, jedes Modul ganz auf einem Dach darunter
+obere=6,16
+# Wand/Boden/Decke einfarbig je Biom (eigenes Biom: Dungeon-Farben der .biom; sonst je nativer Klimaklasse)
+biomfarben=1
+farbe_wand=128,128,132
+farbe_boden=98,94,90
+farbe_decke=86,82,80
+# Bewohner: Orks, Goblins, Oger, Skelette, Untote, Kull -- Boss: Kull-Haeuptling, Oger, Lich, Minotaurus
+bewohner=11,12,4,5,46,17,15,16,Voelker\kull-krieger,Voelker\kull-berserker,Voelker\kull-waechter
+boss=Voelker\kull-haeuptling,46,117,82
+monster_anteil=85
+level=+2
+boss_level=+4
+uneben=22
+fundament=1

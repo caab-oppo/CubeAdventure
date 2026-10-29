@@ -1,0 +1,12 @@
+# Eigener Gegenstand (LAB -> Gegenstaende)
+name=Irongreatsword
+aktiv=1
+# art: 0 Material/Zutat, 1 Trank/Speise, 2 Waffe, 3 Ruestung, 4 Schmuck, 5 frei
+art=2
+# grundlage: nativer Typ, Unterart, Material (Verhalten, Reiter, Werte)
+grundlage=0x03,0x05,0x01
+level=950
+seltenheit=0
+# modell: eigenes .cub (relativ zu Strukturen\), leer = Aussehen des Spiels
+modell=iron-greatsword5-randoom5.cub
+kennung=5

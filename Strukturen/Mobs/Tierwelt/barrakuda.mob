@@ -1,0 +1,26 @@
+# Eigener Mob (LAB). teil=Nr;Quelle;Index;Datei;Skala;Pos(0/1);x;y;z
+# Quelle: 0 = von der Basisrasse, 1 = keins, 2 = nativer Registry-Index, 3 = eigene .cub
+# Basis Hai: ein Koerperteil, Form frei
+name=barrakuda
+basis=150
+groesse=0
+faktor=1.4
+feindlichkeit=1
+level=-1
+ausruestung=0
+wandern=1
+# eigene Rasse: Kennung (>= 200) und Name im Spiel; Skelett/Bewegung von der Basisrasse
+eigene_rasse=348
+rassen_name=Barrakuda
+rasse_setzen=1
+schwimmt=1
+fliegt=0
+auto_ausrichtung=0
+teil=0;1;-1;;0;0;0;0;0
+teil=1;1;-1;;0;0;0;0;0
+teil=2;1;-1;;0;0;0;0;0
+teil=3;1;-1;;0;0;0;0;0
+teil=4;3;-1;..\Teile\Tierwelt\barrakuda-koerper.cub;1.2;1;0;0;0
+teil=5;1;-1;;0;0;0;0;0
+teil=6;1;-1;;0;0;0;0;0
+teil=7;1;-1;;0;0;0;0;0

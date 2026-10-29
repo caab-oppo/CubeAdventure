@@ -1,0 +1,7 @@
+# Tempelteil
+art=raum
+gewicht=6
+max=2
+dach=1
+anschluss=gang,S,9,2
+anschluss=gang,N,9,2

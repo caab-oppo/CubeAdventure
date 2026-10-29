@@ -1,0 +1,4 @@
+art=raum
+tueren=N,O,S,W
+gewicht=10
+drehen=1

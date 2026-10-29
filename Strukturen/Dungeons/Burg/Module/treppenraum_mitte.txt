@@ -1,0 +1,9 @@
+# Treppenraum mittlere Ebene: Ankunft Ost, Treppe weiter nach oben (West) -- ohne Raum darueber aufs Dach
+art=raum
+gewicht=1
+max=0
+dach=1
+ebene=oben
+anschluss=gang,S,5,2
+anschluss=gang,N,5,2
+oben=treppenraum_dach

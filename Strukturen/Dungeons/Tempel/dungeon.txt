@@ -1,0 +1,22 @@
+# steckt jetzt in der Burg (Tempelteile) -- abgeschaltet
+# steckt jetzt in der Burg (Tempelteile) -- abgeschaltet
+# steckt jetzt in der Burg (Tempelteile) -- abgeschaltet
+# Tempel -- eine Ebene aus 3 x 3 Kammern (60 x 60 Bloecke), Sandstein und Gold
+name=Tempel
+aktiv=0
+anteil=1.0
+gebiet=ueberall
+raster=3,3,1
+kammer=20,20,14
+belegung=80
+zusatzwege=30
+tuer=4,6
+wand=228,220,196
+# Bewohner: Skelett, Untote, Spectrino, Anubis -- Boss: Lich, Minotaurus
+bewohner=17,15,16,80,77
+boss=117,82
+level=+1
+boss_level=+3
+uneben=6
+fundament=1
+monster_je_marker=1

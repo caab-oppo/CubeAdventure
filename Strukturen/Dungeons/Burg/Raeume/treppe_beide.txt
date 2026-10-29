@@ -1,0 +1,5 @@
+# Wendeltreppe durch (mittlere Ebene)
+art=treppe
+tueren=N,O,S,W,oben,unten
+gewicht=10
+drehen=0

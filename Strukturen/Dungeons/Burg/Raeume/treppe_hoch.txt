@@ -1,0 +1,5 @@
+# Wendeltreppe nach oben
+art=treppe
+tueren=N,O,S,W,oben
+gewicht=10
+drehen=0

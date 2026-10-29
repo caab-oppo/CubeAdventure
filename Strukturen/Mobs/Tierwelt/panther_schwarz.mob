@@ -1,0 +1,28 @@
+# Eigener Mob (LAB). teil=Nr;Quelle;Index;Datei;Skala;Pos(0/1);x;y;z
+# Quelle: 0 = von der Basisrasse, 1 = keins, 2 = nativer Registry-Index, 3 = eigene .cub
+# Basis Panther: Gelenke der Basis, Form/Gesicht eigen
+name=panther_schwarz
+basis=29
+groesse=0
+faktor=1.5
+feindlichkeit=1
+level=-1
+ausruestung=0
+wandern=1
+# eigene Rasse: Kennung (>= 200) und Name im Spiel; Skelett/Bewegung von der Basisrasse
+eigene_rasse=253
+rassen_name=Schwarzer Panther
+rasse_setzen=1
+auto_ausrichtung=0
+fliegt=0
+teil=0;3;-1;..\Teile\Tierwelt\panther_schwarz-kopf.cub;0.6;1;0;13.1;-1.7
+teil=1;1;-1;;0;0;0;0;0
+teil=2;3;-1;..\Teile\Tierwelt\panther_schwarz-haende.cub;1.1;1;3.05;1.74;-4.8
+teil=3;3;-1;..\Teile\Tierwelt\panther_schwarz-fuesse.cub;1;1;2.8;-7.24;-5.5
+teil=4;3;-1;..\Teile\Tierwelt\panther_schwarz-koerper.cub;1;1;0;0;-0.7
+teil=5;3;-1;..\Teile\Tierwelt\panther_schwarz-schwanz.cub;1;1;0;-13.13;-4
+teil=6;1;-1;;0;0;0;0;0
+teil=7;1;-1;;0;0;0;0;0
+gelenk=2;3.5;2;7
+gelenk=3;3.5;2;7
+gelenk_verlaengerung=3

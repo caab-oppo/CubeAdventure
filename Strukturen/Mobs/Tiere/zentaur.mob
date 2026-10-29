@@ -1,0 +1,29 @@
+# Eigener Mob (LAB). teil=Nr;Quelle;Index;Datei;Skala;Pos(0/1);x;y;z
+# Quelle: 0 = von der Basisrasse, 1 = keins, 2 = nativer Registry-Index, 3 = eigene .cub
+# Basis Pferd (Skelett), Kopfteil = Oberkoerper: Hoehe im Mob-Labor nachjustieren
+name=zentaur
+basis=98
+groesse=0
+faktor=1.15
+feindlichkeit=1
+# friedlich wie die nativen Tiere (Huhn): Feindlichkeit 1 + Aussehensflag 0x10
+friedlich=1
+level=-1
+ausruestung=0
+wandern=1
+# eigene Rasse: Kennung (>= 200) und Name im Spiel; Skelett/Bewegung von der Basisrasse
+eigene_rasse=211
+rassen_name=Zentaur
+rasse_setzen=1
+auto_ausrichtung=0
+teil=0;3;-1;..\Teile\Tiere\zentaur-kopf.cub;0.8;1;0;8;7.72
+teil=1;1;-1;;0;0;0;0;0
+teil=2;3;-1;..\Teile\Tiere\zentaur-haende.cub;0.8;1;4;0.97;-0.52
+teil=3;3;-1;..\Teile\Tiere\zentaur-fuesse.cub;0.8;1;4;-3.87;-0.52
+teil=4;3;-1;..\Teile\Tiere\zentaur-koerper.cub;0.9;1;0;0;4.72
+teil=5;3;-1;..\Teile\Tiere\zentaur-schwanz.cub;1;1;0;-4.4;-4
+teil=6;1;-1;;0;0;0;0;0
+teil=7;1;-1;;0;0;0;0;0
+gelenk=2;3.5;3;7
+gelenk=3;3.5;3;7
+gelenk_verlaengerung=2

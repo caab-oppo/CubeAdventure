@@ -1,0 +1,4 @@
+art=raum
+tueren=S
+gewicht=6
+drehen=1

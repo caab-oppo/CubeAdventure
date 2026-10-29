@@ -1,0 +1,98 @@
+# Eigenes Biom fuer den AdventureMod (Biom-Werkstatt im LAB). Anleitung: BIOM_ANLEITUNG.md
+name=Gebirge hoch
+aktiv=1
+
+# Auswahl: Anteil in % der passenden Landzellen; klima 0 alle,1 gemaessigt,2 heiss,3 kalt,4 feucht,5 trocken
+anteil=10
+klima=0
+klima_setzen=1
+temperatur=0.10
+feuchte=0.80
+
+# Boden (bodentyp 0 = nativ, 4 Gras, 9 Sand, 10 Schnee, 12 Lava-Boden)
+boden=96,128,70
+boden2=120,120,105
+bodentyp=0
+staerke=0.70
+fels=125,122,118
+fels_an=1
+
+# Gelaende (Bloecke; Meeresspiegel 0 -- unter Hoehe 1 entsteht Wasser)
+terrain_an=1
+grundhoehe=150.0
+wellen=1.0
+wellen_groesse=300.0
+huegel_anteil=0.70
+huegel_hoehe=152.0
+huegel_groesse=350.0
+glaetten=1.00
+berge=0.75
+native_baeume=70
+
+# Fluesse und Seen (Wasser auf Gelaendehoehe)
+fluesse_nativ=1
+fluss_breite=1.50
+fluesse_eigen=1
+fluss_abstand=600
+seen_anteil=0.12
+seen_groesse=50
+
+# Bergzuege (Hoehe 0 = aus) und Schneegrenze (0 = aus)
+bergzug_hoehe=300
+bergzug_breite=500
+bergzug_abstand=1200
+bergzug_zacken=0.75
+schneegrenze=150
+
+# Freie Ebene in der Mitte jeder Biomzelle (Radius, Uebergang, Hoehe in Bloecken)
+ebene_an=1
+ebene_radius=1200
+ebene_rand=250
+ebene_hoehe=200
+
+# Minenschaechte durch die Bergzuege (Anteil 0 = aus)
+minen_anteil=0.00
+minen_raster=700
+stollen_breite=5
+stollen_hoehe=5
+minen_seitengaenge=3
+minen_schaechte=1
+minen_holz=115,82,48
+minen_licht=255,214,120
+minen_schiene=95,95,105
+
+# Kreaturen: native Rassen-IDs (Mob-Labor), Anteil der ersetzten Landspawns
+rassen=47,108,111,28,87,115
+rassen_anteil=0.60
+mobs=
+mobs_max=6
+mobs_level=-1
+
+# Pflanzen (Versuche je Zone, Arten mit Gewicht)
+pflanzen_dichte=50
+pflanzen_arten=Baum:3,Busch:2,Pilz:0,Kristall:1,Kaktus:0,Halme:3
+stamm=80,60,40
+blatt=50,95,55
+akzent=200,200,230
+pflanzen_groesse=1.00
+pflanzen_dateien=
+pflanzen_dateien_gewicht=2
+
+# Dungeons (Anteil in % je Zone)
+dungeon_anteil=3
+dungeon_raeume=4
+dungeon_wand=110,105,100
+dungeon_boden=70,65,60
+dungeon_akzent=230,180,80
+dungeon_dach=1
+dungeon_verfall=0.30
+dungeon_rassen=109,111,17
+dungeon_mobs_dateien=
+dungeon_mobs=6
+dungeon_boss=1
+
+# Native Orte, die im Biom BLEIBEN (Ortstypen; fehlt einer, wird er abgeschaltet):
+#  1 Dorf, 5 Ruinen, 10 Portal, 14 grosser Dungeon/Palast, 2 Berg-, 3 Wald-, 4 See-, 6/8/15 Schlucht-,
+#  7 Tal-, 11 Fels-, 12 Baum-Dungeon, 9/13 im Spiel nicht beobachtet
+orte_erlaubt=
+bergdorf=1

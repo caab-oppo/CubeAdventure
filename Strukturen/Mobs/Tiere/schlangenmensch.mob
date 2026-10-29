@@ -1,0 +1,24 @@
+# Eigener Mob (LAB). teil=Nr;Quelle;Index;Datei;Skala;Pos(0/1);x;y;z
+# Quelle: 0 = von der Basisrasse, 1 = keins, 2 = nativer Registry-Index, 3 = eigene .cub
+# Basis Echsenmensch (Skelett), Schwanz statt Fuessen: Position im Mob-Labor nachjustieren
+name=schlangenmensch
+basis=7
+groesse=0
+faktor=1.1
+feindlichkeit=1
+level=-1
+ausruestung=0
+wandern=1
+# eigene Rasse: Kennung (>= 200) und Name im Spiel; Skelett/Bewegung von der Basisrasse
+eigene_rasse=225
+rassen_name=Schlangenmensch
+rasse_setzen=1
+auto_ausrichtung=0
+teil=0;3;-1;..\Teile\Tiere\schlangenmensch-kopf.cub;1.01;1;0;0.5;2.05
+teil=1;1;-1;;0;0;0;0;0
+teil=2;0;-1;;1;1;6;0;0
+teil=3;1;-1;;0;0;0;0;0
+teil=4;3;-1;..\Teile\Tiere\schlangenmensch-koerper.cub;1;1;0;0;-5
+teil=5;3;-1;..\Teile\Tiere\schlangenmensch-schwanz.cub;0.8;1;0;-5;2
+teil=6;1;-1;;0;0;0;0;0
+teil=7;1;-1;;0;0;0;0;0

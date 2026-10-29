@@ -1,0 +1,5 @@
+art=boss
+gewicht=10
+max=99
+dach=0
+anschluss=weg,S,28,2

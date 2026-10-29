@@ -1,0 +1,5 @@
+# Thronsaal, Treppe durch (selten)
+art=boss
+tueren=N,O,S,W,oben,unten
+gewicht=10
+drehen=0

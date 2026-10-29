@@ -1,0 +1,8 @@
+# Eingang: aussen nach Sueden bleibt offen
+art=eingang
+gewicht=10
+max=99
+dach=0
+ebene=boden
+anschluss=aussen,S,8,2
+anschluss=gang,N,8,2

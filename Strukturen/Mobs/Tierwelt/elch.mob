@@ -1,0 +1,31 @@
+# Eigener Mob (LAB). teil=Nr;Quelle;Index;Datei;Skala;Pos(0/1);x;y;z
+# Quelle: 0 = von der Basisrasse, 1 = keins, 2 = nativer Registry-Index, 3 = eigene .cub
+# Basis Horse: Gelenke der Basis, Form/Gesicht eigen
+name=elch
+basis=98
+groesse=0
+faktor=1.6
+feindlichkeit=1
+# friedlich wie die nativen Tiere (Huhn): Feindlichkeit 1 + Aussehensflag 0x10
+friedlich=1
+level=-1
+ausruestung=0
+wandern=1
+# eigene Rasse: Kennung (>= 200) und Name im Spiel; Skelett/Bewegung von der Basisrasse
+eigene_rasse=233
+rassen_name=Elch
+rasse_setzen=1
+hals=1
+auto_ausrichtung=0
+fliegt=0
+teil=0;3;-1;..\Teile\Tierwelt\elch-kopf.cub;0.8;1;0;9.2;13.42
+teil=1;1;-1;;0;0;0;0;0
+teil=2;3;-1;..\Teile\Tierwelt\elch-haende.cub;0.8;1;2.3;1.37;-0.52
+teil=3;3;-1;..\Teile\Tierwelt\elch-fuesse.cub;0.8;1;2.3;-3.47;-0.52
+teil=4;3;-1;..\Teile\Tierwelt\elch-koerper.cub;0.9;1;0;0;5.62
+teil=5;1;-1;;0;0;0;0;0
+teil=6;1;-1;;0;0;0;0;0
+teil=7;1;-1;;0;0;0;0;0
+gelenk=2;3.5;2.5;7
+gelenk=3;3.5;2.5;7
+gelenk_verlaengerung=3

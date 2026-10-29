@@ -1,0 +1,9 @@
+# zwei Ebenen hoch
+art=raum
+gewicht=8
+max=2
+dach=1
+anschluss=gang,S,10,2
+anschluss=gang,N,10,2
+anschluss=gang,O,15,2
+anschluss=gang,W,15,2

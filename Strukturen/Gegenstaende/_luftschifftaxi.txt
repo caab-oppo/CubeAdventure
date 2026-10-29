@@ -1,0 +1,7 @@
+# Luftschiff-Taxi: Ware je Richtung = Kennung eines eigenen Gegenstands (0 = Kopie der angelegten Waffe)
+nord=2
+ost=3
+sued=1
+west=4
+# ticket_behalten: 1 = gekaufte Ware bleibt im Inventar, 0 = wird nach dem Abflug entfernt (Fahrkarte)
+ticket_behalten=0

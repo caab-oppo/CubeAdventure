@@ -1,0 +1,5 @@
+# Beiwerte zu elfen-baumhaus-3.cub (LAB). Nicht Teil des nativen Formats.
+# typ = placeStructure param_5 (0 = Markerlogik aus, Marker ersetzt der Mod)
+typ=0x0
+fundament=0
+herkunft=export: Strukturen\Stadt\elfen-baumhaus-3.cub

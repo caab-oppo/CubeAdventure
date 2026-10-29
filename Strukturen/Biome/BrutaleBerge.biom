@@ -1,0 +1,81 @@
+# Eigenes Biom fuer den AdventureMod (Biom-Werkstatt im LAB). Anleitung: BIOM_ANLEITUNG.md
+name=BrutaleBerge
+aktiv=0
+
+# Auswahl: Anteil in % der passenden Landzellen; klima 0 alle,1 gemaessigt,2 heiss,3 kalt,4 feucht,5 trocken
+anteil=10
+klima=3
+klima_setzen=0
+temperatur=0.10
+feuchte=0.80
+
+# Boden (bodentyp 0 = nativ, 4 Gras, 9 Sand, 10 Schnee, 12 Lava-Boden)
+boden=164,158,96
+boden2=81,116,136
+bodentyp=0
+staerke=1.00
+fels=110,105,100
+fels_an=1
+
+# Gelaende (Bloecke; Meeresspiegel 0 -- unter Hoehe 1 entsteht Wasser)
+terrain_an=1
+grundhoehe=200.0
+wellen=3.0
+wellen_groesse=300.0
+huegel_anteil=1.00
+huegel_hoehe=200.0
+huegel_groesse=90.0
+glaetten=0.90
+berge=0.20
+native_baeume=100
+
+# Fluesse und Seen (Wasser auf Gelaendehoehe)
+fluesse_nativ=1
+fluss_breite=1.00
+fluesse_eigen=0
+fluss_abstand=600
+seen_anteil=0.00
+seen_groesse=60
+
+# Bergzuege (Hoehe 0 = aus) und Schneegrenze (0 = aus)
+bergzug_hoehe=200
+bergzug_breite=400
+bergzug_abstand=1400
+bergzug_zacken=0.70
+schneegrenze=250
+
+# Kreaturen: native Rassen-IDs (Mob-Labor), Anteil der ersetzten Landspawns
+rassen=
+rassen_anteil=0.70
+mobs=
+mobs_max=6
+mobs_level=-1
+
+# Pflanzen (Versuche je Zone, Arten mit Gewicht)
+pflanzen_dichte=40
+pflanzen_arten=Baum:3,Busch:2,Pilz:1,Kristall:0,Kaktus:0,Halme:4
+stamm=95,65,35
+blatt=60,130,45
+akzent=210,70,150
+pflanzen_groesse=1.00
+pflanzen_dateien=
+pflanzen_dateien_gewicht=2
+
+# Dungeons (Anteil in % je Zone)
+dungeon_anteil=6
+dungeon_raeume=4
+dungeon_wand=95,95,105
+dungeon_boden=60,55,50
+dungeon_akzent=220,160,40
+dungeon_dach=1
+dungeon_verfall=0.30
+dungeon_rassen=
+dungeon_mobs_dateien=
+dungeon_mobs=6
+dungeon_boss=1
+
+# Native Orte, die im Biom BLEIBEN (Ortstypen; fehlt einer, wird er abgeschaltet):
+#  1 Dorf, 5 Ruinen, 10 Portal, 14 grosser Dungeon/Palast, 2 Berg-, 3 Wald-, 4 See-, 6/8/15 Schlucht-,
+#  7 Tal-, 11 Fels-, 12 Baum-Dungeon, 9/13 im Spiel nicht beobachtet
+orte_erlaubt=5,10
+bergdorf=1

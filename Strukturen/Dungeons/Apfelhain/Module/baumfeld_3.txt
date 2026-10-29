@@ -1,0 +1,7 @@
+# Apfelbaum (Apfelbaum.cub)
+art=raum
+gewicht=8
+max=99
+dach=0
+anschluss=weg,S,28,2
+anschluss=weg,O,28,2

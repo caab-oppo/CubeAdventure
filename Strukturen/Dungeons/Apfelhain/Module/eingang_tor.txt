@@ -1,0 +1,9 @@
+# Eingang, Tor nach Sueden
+art=eingang
+gewicht=10
+max=99
+dach=0
+anschluss=aussen,S,28,2
+anschluss=weg,N,28,2
+anschluss=weg,O,28,2
+anschluss=weg,W,28,2

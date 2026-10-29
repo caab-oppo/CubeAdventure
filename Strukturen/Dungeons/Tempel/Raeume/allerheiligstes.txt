@@ -1,0 +1,5 @@
+# Boss-Kammer (am weitesten vom Eingang)
+art=boss
+tueren=N,O,S,W
+gewicht=10
+drehen=1

@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{D4444444-4444-4444-4444-444444444444}</ProjectGuid>
+    <RootNamespace>AdventureMod</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <TargetName>AdventureMod</TargetName>
+    <!-- Ordnerlayout (Cube-Adventure-Test):
+           <Spielordner>\Cube.exe, Mods\, Strukturen\       Testinstallation
+           <Spielordner>\Projekt\AdventureMod.sln            diese Projektmappe
+           <Spielordner>\Projekt\AdventureMod\               dieses Projekt
+         Zwischenstaende und PDB bleiben in Projekt\bin und Projekt\obj; die fertige DLL kopiert der
+         Post-Build-Schritt nach <Spielordner>\Mods\ (dort laedt sie der Starter). -->
+    <OutDir>$(ProjectDir)..\bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\obj\$(Platform)\$(Configuration)\</IntDir>
+    <GameDir>$(ProjectDir)..\..\</GameDir>
+  </PropertyGroup>
+  <!--
+    MinHook (https://github.com/TsudaKageyu/minhook), gleicher vorinstallierter
+    Ordner wie beim VillageDungeonTraderMod-Projekt:
+      MinHook_134_lib\include\MinHook.h
+      MinHook_134_lib\lib\libMinHook.x86.lib
+    Liegt in Projekt\MinHook_134_lib (neben diesem Projektordner).
+  -->
+  <PropertyGroup>
+    <MinHookIncludeDir Condition="'$(MinHookIncludeDir)'==''">$(ProjectDir)..\MinHook_134_lib\include</MinHookIncludeDir>
+    <MinHookLibDir Condition="'$(MinHookLibDir)'==''">$(ProjectDir)..\MinHook_134_lib\lib</MinHookLibDir>
+  </PropertyGroup>
+  <!--
+    DirectX SDK (Juni 2010): seit 2026-10-29 NICHT mehr noetig (kein d3dx9 mehr; Schrift = Spiel-Textknoten) (frueher D3DXFONT
+    fuer das Text-Overlay), ist NICHT mehr Teil des modernen Windows-SDK.
+    Installer setzt normalerweise die Umgebungsvariable DXSDK_DIR automatisch;
+    falls nicht vorhanden, hier per Benutzermakro ueberschreiben. Siehe
+    README.md "Build-Voraussetzungen".
+  -->
+  <PropertyGroup>
+    <DXSDKIncludeDir Condition="'$(DXSDKIncludeDir)'=='' and '$(DXSDK_DIR)'!=''">$(DXSDK_DIR)Include</DXSDKIncludeDir>
+    <DXSDKLibDir Condition="'$(DXSDKLibDir)'=='' and '$(DXSDK_DIR)'!=''">$(DXSDK_DIR)Lib\x86</DXSDKLibDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>cwsdk;$(MinHookIncludeDir);$(DXSDKIncludeDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(MinHookLibDir);$(DXSDKLibDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libMinHook.x86.lib;d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <!-- Siehe VillageDungeonTraderMod.vcxproj: libMinHook.x86.lib ist
+           statisch mit /MT gebaut, unser Projekt nutzt /MD, daher der LNK4098-Fix. -->
+      <IgnoreSpecificDefaultLibraries>libcmtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <!-- Veroeffentlichung (2026-10-29): C++-Laufzeit fest in die DLL (/MT) -> Spieler brauchen KEIN VC++ Redistributable -->
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>cwsdk;$(MinHookIncludeDir);$(DXSDKIncludeDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <!-- Veroeffentlichung: in der DLL nur der PDB-Dateiname, kein Pfad (sonst stuende C:\Users\<Name>\... darin) -->
+      <AdditionalOptions>/PDBALTPATH:%_PDB% %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalLibraryDirectories>$(MinHookLibDir);$(DXSDKLibDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libMinHook.x86.lib;d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <!-- libMinHook.x86.lib hat keine eigene Laufzeit-Vorgabe (geprueft: keine /DEFAULTLIB-Eintraege) -> passt zu /MT -->
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="AdventureModFramework.cpp" />
+    <ClCompile Include="WanderingMerchant.cpp" />
+    <ClCompile Include="PirateShip.cpp" />
+    <ClCompile Include="PirateAirship.cpp" />
+    <ClCompile Include="AirshipSpawner.cpp" />
+    <ClCompile Include="MountainVillage.cpp" />
+    <ClCompile Include="AirshipTaxi.cpp" />
+    <ClCompile Include="BlacksmithNpc.cpp" />
+    <ClCompile Include="GemForge.cpp" />
+    <ClCompile Include="NativeHouseProbe.cpp" />
+    <ClCompile Include="LabStructure.cpp" />
+    <ClCompile Include="LabBridge.cpp" />
+    <ClCompile Include="LabWindow.cpp" />
+    <ClCompile Include="PerfTweaks.cpp" />
+    <ClCompile Include="MobLab.cpp" />
+    <ClCompile Include="CrashLogger.cpp" />
+    <ClCompile Include="BiomeGen.cpp" />
+    <ClCompile Include="BiomeMod.cpp" />
+    <ClCompile Include="ModSwitches.cpp" />
+    <ClCompile Include="Recipes.cpp" />
+    <ClCompile Include="Items.cpp" />
+    <ClCompile Include="Skills.cpp" />
+    <ClCompile Include="BuildingFx.cpp" />
+    <ClCompile Include="Vendors.cpp" />
+    <ClCompile Include="Temples.cpp" />
+    <ClCompile Include="Dungeons.cpp" />
+    <ClCompile Include="Tracking.cpp" />
+    <ClCompile Include="TierWerkstatt.cpp" />
+    <ClCompile Include="NativeUi.cpp" />
+    <ClCompile Include="TierGelenke.cpp" />
+    <ClCompile Include="Boat.cpp" />
+    <ClCompile Include="ModDb.cpp" />
+    <ClCompile Include="MapMarkers.cpp" />
+    <ClCompile Include="ZoneSplit.cpp" />
+    <ClCompile Include="Lan.cpp" />
+    <ClCompile Include="Host.cpp" />
+    <ClCompile Include="Wildlife.cpp" />
+    <ClCompile Include="Effects.cpp" />
+    <ClCompile Include="City.cpp" />
+    <ClCompile Include="CityModels.cpp" />
+    <ClCompile Include="cwsdk\cube.cpp" />
+    <ClCompile Include="cwsdk\cube_funcs.cpp" />
+    <ClCompile Include="cwsdk\cube_util.cpp" />
+    <ClCompile Include="cwsdk\globals.cpp" />
+    <ClCompile Include="cwsdk\cube\World.cpp" />
+    <ClCompile Include="Wegfinder.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="AdventureModFramework.h" />
+    <ClInclude Include="Wegfinder.h" />
+    <ClInclude Include="WanderingMerchant.h" />
+    <ClInclude Include="PirateShip.h" />
+    <ClInclude Include="PirateAirship.h" />
+    <ClInclude Include="AirshipSpawner.h" />
+    <ClInclude Include="MountainVillage.h" />
+    <ClInclude Include="AirshipTaxi.h" />
+    <ClInclude Include="BlacksmithNpc.h" />
+    <ClInclude Include="GemForge.h" />
+    <ClInclude Include="NativeHouseProbe.h" />
+    <ClInclude Include="LabStructure.h" />
+    <ClInclude Include="LabBridge.h" />
+    <ClInclude Include="LabWindow.h" />
+    <ClInclude Include="PerfTweaks.h" />
+    <ClInclude Include="MobLab.h" />
+    <ClInclude Include="CrashLogger.h" />
+    <ClInclude Include="BiomeGen.h" />
+    <ClInclude Include="BiomeMod.h" />
+    <ClInclude Include="ModSwitches.h" />
+    <ClInclude Include="Recipes.h" />
+    <ClInclude Include="Items.h" />
+    <ClInclude Include="Skills.h" />
+    <ClInclude Include="BuildingFx.h" />
+    <ClInclude Include="Vendors.h" />
+    <ClInclude Include="Temples.h" />
+    <ClInclude Include="Dungeons.h" />
+    <ClInclude Include="Tracking.h" />
+    <ClInclude Include="TierWerkstatt.h" />
+    <ClInclude Include="NativeUi.h" />
+    <ClInclude Include="TierGelenke.h" />
+    <None Include="TierBasis.inc" />
+    <ClInclude Include="Boat.h" />
+    <ClInclude Include="ModDb.h" />
+    <ClInclude Include="MapMarkers.h" />
+    <ClInclude Include="ZoneSplit.h" />
+    <ClInclude Include="Lan.h" />
+    <ClInclude Include="Host.h" />
+    <ClInclude Include="Wildlife.h" />
+    <None Include="AddrMap_Server.inc" />
+    <ClInclude Include="Effects.h" />
+    <ClInclude Include="City.h" />
+    <ClInclude Include="CityModels.h" />
+    <ClInclude Include="LabModelNames.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ItemDefinitionGroup>
+    <PostBuildEvent>
+      <Command>if not exist "$(GameDir)Mods" mkdir "$(GameDir)Mods"
+copy /Y "$(TargetPath)" "$(GameDir)Mods\$(TargetFileName)"</Command>
+      <Message>AdventureMod.dll nach Spielordner\Mods kopieren</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+</Project>

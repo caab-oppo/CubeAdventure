@@ -1,0 +1,40 @@
+# Build
+bin/
+obj/
+.vs/
+*.user
+*.pdb
+*.ilk
+*.ipch
+*.aps
+x64/
+Debug/
+Release/
+
+# MinHook wird nicht mitgeliefert (siehe MinHook_134_lib/LIESMICH.md)
+MinHook_134_lib/*
+!MinHook_134_lib/LIESMICH.md
+
+# Arbeits- und Veroeffentlichungsdateien
+Sicherungen/
+Veroeffentlichung/
+*.zip
+*.dmp
+__pycache__/
+*.pyc
+
+# Welt-/Spielerdaten und LAB-Arbeitsdateien
+Strukturen/_autosave/
+Strukturen/Export/
+Strukturen/LabApi/
+Strukturen/Mobs/Vorschau/
+Strukturen/**/platzierungen_*.txt
+Strukturen/Biome/_erzwungen.txt
+*.orig.cub
+*.alt
+*.bak
+*.tmp
+*.log
+*.erledigt
+AdventureMod_*.txt
+AdventureMod_*.cfg

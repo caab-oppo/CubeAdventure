@@ -1,0 +1,5 @@
+# Eingang mit Treppe nach oben (wenn der Baum hier hoch geht)
+art=eingang
+tueren=N,O,S,W,oben
+gewicht=10
+drehen=0

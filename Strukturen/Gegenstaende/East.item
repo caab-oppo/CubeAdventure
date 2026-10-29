@@ -1,0 +1,12 @@
+# Eigener Gegenstand (LAB -> Gegenstaende)
+name=East
+aktiv=1
+# art: 0 Material/Zutat, 1 Trank/Speise, 2 Waffe, 3 Ruestung, 4 Schmuck, 5 frei
+art=0
+# grundlage: nativer Typ, Unterart, Material (Verhalten, Reiter, Werte)
+grundlage=0x0B,0x00,0x00
+level=1
+seltenheit=0
+# modell: eigenes .cub (relativ zu Strukturen\), leer = Aussehen des Spiels
+modell=east.cub
+kennung=3

@@ -1,0 +1,29 @@
+{
+    "version": 4,
+    "configurations": [
+        {
+            "name": "AdventureMod (Win32)",
+            "includePath": [
+                "${workspaceFolder}",
+                "${workspaceFolder}/cwsdk",
+                "${workspaceFolder}/cwsdk/cube",
+                "${workspaceFolder}/cwsdk/msvc_bincompat",
+                "${workspaceFolder}/cwsdk/plasma",
+                "${workspaceFolder}/../MinHook_134_lib/include",
+                "${env:DXSDK_DIR}Include"
+            ],
+            "defines": [
+                "WIN32",
+                "_DEBUG",
+                "_WINDOWS",
+                "_USRDLL",
+                "_CRT_SECURE_NO_WARNINGS"
+            ],
+            "windowsSdkVersion": "10.0.22621.0",
+            "compilerPath": "${env:VCToolsInstallDir}bin\\Hostx64\\x86\\cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x86"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+# Eigener Mob (LAB). teil=Nr;Quelle;Index;Datei;Skala;Pos(0/1);x;y;z
+# Quelle: 0 = von der Basisrasse, 1 = keins, 2 = nativer Registry-Index, 3 = eigene .cub
+# Basis Pig: Gelenke der Basis, Form/Gesicht eigen
+name=warzenschwein
+basis=33
+groesse=0
+faktor=1.0
+feindlichkeit=1
+# friedlich wie die nativen Tiere (Huhn): Feindlichkeit 1 + Aussehensflag 0x10
+friedlich=1
+level=-1
+ausruestung=0
+wandern=1
+# eigene Rasse: Kennung (>= 200) und Name im Spiel; Skelett/Bewegung von der Basisrasse
+eigene_rasse=243
+rassen_name=Warzenschwein
+rasse_setzen=1
+auto_ausrichtung=0
+fliegt=0
+teil=0;3;-1;..\Teile\Tierwelt\warzenschwein-kopf.cub;0.85;1;0;9;3.3
+teil=1;1;-1;;0;0;0;0;0
+teil=2;3;-1;..\Teile\Tierwelt\warzenschwein-haende.cub;1;1;3.2;2.7;-3.5
+teil=3;3;-1;..\Teile\Tierwelt\warzenschwein-fuesse.cub;1;1;3.2;-4.8;-3.5
+teil=4;3;-1;..\Teile\Tierwelt\warzenschwein-koerper.cub;1.2;1;0;0;2.4
+teil=5;1;-1;;0;0;0;0;0
+teil=6;1;-1;;0;0;0;0;0
+teil=7;1;-1;;0;0;0;0;0
+gelenk=2;3.5;2.5;2
+gelenk=3;3.5;2.5;2
+gelenk_verlaengerung=2

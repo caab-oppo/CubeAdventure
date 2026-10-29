@@ -1,0 +1,29 @@
+# Eigener Mob (LAB). teil=Nr;Quelle;Index;Datei;Skala;Pos(0/1);x;y;z
+# Quelle: 0 = von der Basisrasse, 1 = keins, 2 = nativer Registry-Index, 3 = eigene .cub
+# Basis Drache (fliegt): Gelenke der Basis, Form/Gesicht eigen
+name=golddrache
+basis=101
+groesse=0
+faktor=3.0
+feindlichkeit=1
+level=-1
+ausruestung=0
+wandern=1
+# eigene Rasse: Kennung (>= 200) und Name im Spiel; Skelett/Bewegung von der Basisrasse
+eigene_rasse=214
+rassen_name=Golddrache
+rasse_setzen=1
+auto_ausrichtung=0
+hals=1
+fliegt=1
+teil=0;3;-1;..\Teile\Tiere\golddrache-kopf.cub;0.9;1;0;18.3;11.75
+teil=1;1;-1;;0;0;0;0;0
+teil=2;3;-1;..\Teile\Tiere\golddrache-fuesse.cub;1.5;1;4.55;-1.23;-3.5
+teil=3;3;-1;..\Teile\Tiere\golddrache-fuesse.cub;1;1;3.3;-5.62;-6.5
+teil=4;3;-1;..\Teile\Tiere\golddrache-koerper.cub;1;1;0;0;0.45
+teil=5;3;-1;..\Teile\Tiere\golddrache-schwanz.cub;0.8;1;0;-11;4
+teil=6;1;-1;;0;0;0;0;0
+teil=7;3;-1;..\Teile\Tiere\golddrache-fluegel.cub;1;1;4.2;0;2.45
+gelenk=2;2.5;3.5;6
+gelenk=3;2.5;3.5;6
+gelenk_verlaengerung=4

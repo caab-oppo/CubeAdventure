@@ -1,0 +1,6 @@
+# Turm, Sackgasse, oben Truhe
+art=raum
+gewicht=5
+max=3
+dach=1
+anschluss=gang,S,4,2

@@ -1,0 +1,12 @@
+# Haendler (LAB -> Haendler). Rollen: markt = eigener Haendler (Marktplatz, Mutterbaum, Festung, Bergdorf), alchemist = am Braustand, huette1..huette5 = Haendlerhaeuser im Handelsviertel.
+rolle=markt
+name=Markthaendler
+# klasse: 0x80 Haendler, 0x81..0x83 Dorf-NPC, 0x84 Gastwirt
+klasse=0x80
+# native_waren: Waren wie im Dorf (nur Klasse 0x80..0x83)
+native_waren=0
+zutaten=1
+traenke=1
+gegenstaende=1
+anzahl=20
+# ware: Typ;Unterart;Material;Level;Seltenheit;Anzahl  oder  item:<Kennung>;Anzahl

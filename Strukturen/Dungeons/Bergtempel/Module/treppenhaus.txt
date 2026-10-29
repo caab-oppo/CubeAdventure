@@ -1,0 +1,10 @@
+# Treppenraum Grundebene: Treppe nach oben (Ost), darueber treppenraum_mitte
+art=raum
+gewicht=9
+max=4
+dach=1
+ebene=boden
+pflicht=2
+anschluss=gang,S,5,2
+anschluss=gang,N,5,2
+oben=treppenraum_mitte

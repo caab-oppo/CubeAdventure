@@ -1,0 +1,4 @@
+# Nachbau von building-smithy.cub (Markerfarben -> Luft). station=typ,x,y,z,sx,sy,sz (Modellkoordinaten)
+station=72,10,13,7,1.0,1.0,1.0
+station=77,22,14,7,1.8,1.8,1.2
+station=71,21,27,7,3.0,3.0,6.0

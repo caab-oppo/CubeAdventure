@@ -1,0 +1,5 @@
+# Thronsaal oben, erreicht ueber die Wendeltreppe
+art=boss
+tueren=N,O,S,W,unten
+gewicht=10
+drehen=0

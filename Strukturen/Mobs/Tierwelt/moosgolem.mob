@@ -1,0 +1,30 @@
+# Eigener Mob (LAB). teil=Nr;Quelle;Index;Datei;Skala;Pos(0/1);x;y;z
+# Quelle: 0 = von der Basisrasse, 1 = keins, 2 = nativer Registry-Index, 3 = eigene .cub
+# Basis Turtle: Gelenke der Basis, Form/Gesicht eigen
+name=moosgolem
+basis=25
+groesse=0
+faktor=2.4
+feindlichkeit=1
+# friedlich wie die nativen Tiere (Huhn): Feindlichkeit 1 + Aussehensflag 0x10
+friedlich=1
+level=-1
+ausruestung=0
+wandern=1
+# eigene Rasse: Kennung (>= 200) und Name im Spiel; Skelett/Bewegung von der Basisrasse
+eigene_rasse=273
+rassen_name=Moosgolem-Schildkroete
+rasse_setzen=1
+auto_ausrichtung=0
+fliegt=0
+teil=0;3;-1;..\Teile\Tierwelt\moosgolem-kopf.cub;0.65;1;0;11.94;3.22
+teil=1;1;-1;;0;0;0;0;0
+teil=2;3;-1;..\Teile\Tierwelt\moosgolem-haende.cub;0.8;1;5;0.6;-0.5
+teil=3;3;-1;..\Teile\Tierwelt\moosgolem-fuesse.cub;0.8;1;5;-5.3;-0.5
+teil=4;3;-1;..\Teile\Tierwelt\moosgolem-koerper.cub;1;1;0;0;6.22
+teil=5;1;-1;;0;0;0;0;0
+teil=6;1;-1;;0;0;0;0;0
+teil=7;1;-1;;0;0;0;0;0
+gelenk=2;4;3.5;8
+gelenk=3;4;3.5;8
+gelenk_verlaengerung=2

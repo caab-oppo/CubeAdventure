@@ -1,0 +1,23 @@
+# Eigenes Rezept (LAB -> Rezepte). Typ/Unterart/Material als Zahlen, z. B. Herzblume 0x0B,0x16,0
+name=Slice of Strenght 
+aktiv=1
+ergebnis=0x01,0x08,0x00
+ergebnis_level=1
+ergebnis_seltenheit=0
+# station: 0 keine, 1 Wasser, 3 Ofen, 4 Amboss, 5 Spinnrad, 6 Webstuhl, 7 Saege, 8 Werkbank, 9 Lagerfeuer
+station=0
+sofort_bekannt=1
+zutat1=0x0B,0x11,0x00,1
+zutat2=0x0B,0x33,0x00,1
+zutat3=0x0B,0x14,0x00,1
+zutat4=0x0B,0x17,0x00,1
+# ergebnis_gegenstand: Kennung eines eigenen Gegenstands (LAB -> Gegenstaende), 0 = nativer Gegenstand
+ergebnis_gegenstand=0
+# wirkung: keine, heilen, regeneration, staerke, schutz, schnelligkeit, langsam_fallen, nachtsicht, mana, ausdauer
+wirkung=staerke
+wirkung_wert=50.00
+wirkung_dauer=120
+wirkung_auch_heilen=0
+# modell: eigenes optisches Modell des Ergebnisses (.cub, relativ zu Strukturen\), leer = Modell des Spiels
+modell=Slice of Strenght.cub
+effekt_id=4

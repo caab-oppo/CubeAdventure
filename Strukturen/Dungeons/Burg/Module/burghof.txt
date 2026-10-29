@@ -1,0 +1,9 @@
+art=raum
+gewicht=6
+max=2
+dach=0
+ebene=boden
+anschluss=gang,S,19,2
+anschluss=gang,N,19,2
+anschluss=gang,O,19,2
+anschluss=gang,W,19,2

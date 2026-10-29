@@ -1,0 +1,36 @@
+# Eigener Skill (LAB -> Skills)
+version=4
+name=Teleport
+aktiv=1
+# art: Teleport, Beschwoeren
+art=Teleport
+# klasse: 0 alle, 1 Krieger, 2 Waldlaeufer, 3 Magier, 4 Schurke
+klasse=0
+# bild: relativ zu Strukturen\Skills\Bilder (png, bmp, jpg)
+bild=teleport.png
+# taste: virtueller Tastencode (0x34 = 4, 0x35 = 5, 0x36 = 6, 0x50 = P, 0x55 = U, 0x74 = F5 ...)
+taste=0x50
+# taste2: zweite Taste (Teleport: Steinliste / naechster Stein), 0 = keine
+taste2=0x36
+# taste_ablegen: Teleport -- Runenstein ablegen bzw. daneben aufheben, 0 = keine
+taste_ablegen=0x55
+# Fortschritt: Rang 1 ab Level ab_level, jeder weitere Rang nach level_je_rang Leveln, hoechstens max_rang
+ab_level=1
+level_je_rang=10
+max_rang=5
+# baum_platz: Skilltree (X) -- 9 = Faehigkeit 4, 10 = Faehigkeit 5 (Punkte aus dem nativen Baum), -1 = Rang folgt dem Level
+baum_platz=9
+punkte_je_rang=5
+# Werte: Rang r -> wert + (r-1) * wert_je_rang usw.; abklingzeit wird je Rang um abklingzeit_je_rang kuerzer
+wert=1.00
+wert_je_rang=1.00
+dauer=0.0
+dauer_je_rang=0.0
+abklingzeit=10.0
+abklingzeit_je_rang=1.0
+# mana: Kosten in % des Manas
+mana=20
+# beschreibung: Text im Skillfenster (X), wenn die Maus ueber dem Platz steht
+beschreibung=Runensteine ablegen (U) und zu ihnen reisen (P, Liste mit 6). Erst nutzbar, nachdem du mit dem Hochelfenkoenig auf dem Mutterbaum der Elfenstadt gesprochen hast.
+# freischalten: erst nach einem Gespraech nutzbar (hochelfenkoenig = Hochelfenkoenig auf dem Mutterbaum), leer = sofort
+freischalten=hochelfenkoenig

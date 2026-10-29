@@ -1,0 +1,25 @@
+# Zonen-Modell fuer den AdventureMod (LAB -> Zonen-Modelle). Wird mit der Zone erzeugt wie die nativen Baeume.
+name=Purpleheart
+aktiv=1
+art=sammelbar
+# Sammelbar: eigener Gegenstand (Typ 0x0B, Unterart gegenstand_id -- nicht aendern, sonst passen gesammelte Exemplare nicht mehr)
+gegenstand_name=Purpleheart
+gegenstand_id=0x33
+modell=heartflower-purple.cub
+# gebiet: ueberall | vanilla | biom:<datei.biom>;  boden: 0 alle, 4 Gras, 9 Sand, 10 Schnee, 12 Lava-Boden
+gebiet=biom:Pilzwald.biom
+boden=0
+# dichte: Baum/Blume = Versuche je Zone, Dungeon = % Chance je Zone
+dichte=6
+hang_min=0.00
+hang_max=0.80
+abstand=6
+hoehe_min=-1000
+hoehe_max=1000
+# klein_faktor (nur Blume): 0 = als Bloecke setzen, sonst Modell x Faktor wie die nativen Pflanzen (Schilf 0.09)
+klein_faktor=0.100
+wind=0
+z_versatz=0
+drehen=1
+unebenheit=0
+fundament=0

@@ -1,0 +1,5 @@
+# Ankunft der Wendeltreppe von unten
+art=treppe
+tueren=N,O,S,W,unten
+gewicht=10
+drehen=0

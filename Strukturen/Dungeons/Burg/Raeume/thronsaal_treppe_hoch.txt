@@ -1,0 +1,5 @@
+# Thronsaal mit Treppe weiter nach oben (selten)
+art=boss
+tueren=N,O,S,W,oben
+gewicht=10
+drehen=0

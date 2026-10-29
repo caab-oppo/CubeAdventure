@@ -1,0 +1,33 @@
+# Bergtempel -- Baukasten Format 2 wie die Burg, aber IN einen Berg gegraben (lage=berg)
+format=2
+name=Bergtempel
+aktiv=1
+anteil=0.6
+gebiet=ueberall
+# lage=berg: nur wo das Gelaende ueber dem Grundriss hoeher ist als der Tempel -- felsdecke = Bloecke Fels ueber dem
+# hoechsten Raum, berg_anteil = so viel % der Messpunkte muessen so bedeckt sein. Eingang am Hangfuss (Boden vor dem
+# Portal = Eingangsboden), davor graebt der Mod einen Stollen bis ins Freie.
+lage=berg
+felsdecke=4
+berg_anteil=75
+typ=gang,7,10,2,128,128,132
+typ=aussen,7,10,2,110,106,100
+aussen=aussen
+module=18,28
+flaeche_min=90,90
+flaeche_max=180,180
+hoehe_max=28
+versuche=24
+zinnen=0
+obere=5,12
+biomfarben=1
+farbe_wand=128,128,132
+farbe_boden=98,94,90
+farbe_decke=86,82,80
+# Bewohner: Skelette, Untote, Spectrino, Anubis, Goblins -- Boss: Lich, Minotaurus
+bewohner=17,15,16,80,77,5
+boss=117,82
+monster_anteil=85
+level=+2
+boss_level=+4
+fundament=1

@@ -1,0 +1,29 @@
+# Hochelfenkoenig (2026-10-27): steht am Tisch vor dem Thron in der Halle oben im Mutterbaum der Elfenstadt (City.cpp).
+# Kopf = Strukturen\elfking.cub (Kopie in Teile\Elfen). Ein Gespraech mit ihm schaltet den Teleport-Skill frei.
+# teil=Nr;Quelle;Index;Datei;Skala;Pos(0/1);x;y;z   Quelle: 0 Basis, 1 keins, 2 nativ, 3 eigene .cub
+name=hochelfenkoenig
+basis=0
+groesse=0
+faktor=1.35
+feindlichkeit=3
+level=-1
+ausruestung=0
+wandern=0
+eigene_rasse=399
+rassen_name=Hochelfenkoenig
+rasse_setzen=1
+teil=0;3;-1;Teile\Elfen\hochelfenkoenig-kopf.cub;0;0;0;0;0
+teil=1;0;-1;;0;0;0;0;0
+teil=2;0;-1;;0;0;0;0;0
+teil=3;0;-1;;0;0;0;0;0
+teil=4;3;-1;Teile\Elfen\elf-m1-koerper.cub;0;0;0;0;0
+teil=5;0;-1;;0;0;0;0;0
+teil=6;0;-1;;0;0;0;0;0
+teil=7;0;-1;;0;0;0;0;0
+# sprechblase=: eine Zeile = eine Seite (erstes Gespraech, schaltet den Teleport frei)
+# sprechblase_danach=: Seiten fuer jedes weitere Gespraech
+sprechblase=Hello, and a warm welcome, traveller!
+sprechblase=You have already done so much for this land.
+sprechblase=Here, take this gift from me: the Teleport skill.
+sprechblase=Use it wisely.
+sprechblase_danach=Use it wisely.

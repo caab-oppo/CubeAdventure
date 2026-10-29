@@ -1,0 +1,8 @@
+# Eingang: aussen nach Sueden zeigt aus dem Hang
+art=eingang
+gewicht=10
+max=99
+dach=1
+ebene=boden
+anschluss=aussen,S,9,2
+anschluss=gang,N,9,2

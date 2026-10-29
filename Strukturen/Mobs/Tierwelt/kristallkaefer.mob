@@ -1,0 +1,29 @@
+# Eigener Mob (LAB). teil=Nr;Quelle;Index;Datei;Skala;Pos(0/1);x;y;z
+# Quelle: 0 = von der Basisrasse, 1 = keins, 2 = nativer Registry-Index, 3 = eigene .cub
+# Basis Krabbe: Gelenke der Basis, Form/Gesicht eigen
+name=kristallkaefer
+basis=106
+groesse=0
+faktor=1.1
+feindlichkeit=1
+# friedlich wie die nativen Tiere (Huhn): Feindlichkeit 1 + Aussehensflag 0x10
+friedlich=1
+level=-1
+ausruestung=0
+wandern=1
+# eigene Rasse: Kennung (>= 200) und Name im Spiel; Skelett/Bewegung von der Basisrasse
+eigene_rasse=271
+rassen_name=Kristallkaefer
+rasse_setzen=1
+auto_ausrichtung=0
+fliegt=0
+teil=0;3;-1;..\Teile\Tierwelt\kristallkaefer-kopf.cub;0.75;1;0;1;6.57
+teil=1;1;-1;;0;0;0;0;0
+teil=2;3;-1;..\Teile\Tierwelt\kristallkaefer-haende.cub;1.2;1;8.7;0;6.8
+teil=3;3;-1;..\Teile\Tierwelt\kristallkaefer-fuesse.cub;0.98;1;4.26;-0.98;-3.4
+teil=4;3;-1;..\Teile\Tierwelt\kristallkaefer-koerper.cub;1;1;0;0;2.7
+teil=5;1;-1;;0;0;0;0;0
+teil=6;1;-1;;0;0;0;0;0
+teil=7;1;-1;;0;0;0;0;0
+gelenk=3;1.5;3.93;5
+gelenk_verlaengerung=3

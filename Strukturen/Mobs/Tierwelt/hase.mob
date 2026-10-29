@@ -1,0 +1,29 @@
+# Eigener Mob (LAB). teil=Nr;Quelle;Index;Datei;Skala;Pos(0/1);x;y;z
+# Quelle: 0 = von der Basisrasse, 1 = keins, 2 = nativer Registry-Index, 3 = eigene .cub
+# Basis Bunny: Koerper mit Kopf, alles eigen
+name=hase
+basis=35
+groesse=0
+faktor=0.6
+feindlichkeit=1
+# friedlich wie die nativen Tiere (Huhn): Feindlichkeit 1 + Aussehensflag 0x10
+friedlich=1
+level=-1
+ausruestung=0
+wandern=1
+# eigene Rasse: Kennung (>= 200) und Name im Spiel; Skelett/Bewegung von der Basisrasse
+eigene_rasse=230
+rassen_name=Hase
+rasse_setzen=1
+auto_ausrichtung=0
+fliegt=0
+teil=0;1;-1;;0;0;0;0;0
+teil=1;1;-1;;0;0;0;0;0
+teil=2;1;-1;;0;0;0;0;0
+teil=3;3;-1;..\Teile\Tierwelt\hase-fuesse.cub;0.98;1;4.22;-1.96;0.8
+teil=4;3;-1;..\Teile\Tierwelt\hase-koerper.cub;1;1;0;0;7.6
+teil=5;1;-1;;0;0;0;0;0
+teil=6;1;-1;;0;0;0;0;0
+teil=7;1;-1;;0;0;0;0;0
+gelenk=3;4;3.83;7
+gelenk_verlaengerung=4

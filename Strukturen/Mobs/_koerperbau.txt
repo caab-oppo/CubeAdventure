@@ -1,0 +1,5 @@
+# Koerperbau je Rasse (LAB > Mobs > Koerperbau). rasse;feld;wert[,wert,wert]
+# Felder: Aussehen (Kreatur+0x78) wie creature_generateAppearance 0x43F7C0. Nur gelistete Felder werden ersetzt.
+# 101 Dragon
+101;pos_fuesse;3.000,-4.000,-10.000
+101;pos_94;0.000,0.000,0.000

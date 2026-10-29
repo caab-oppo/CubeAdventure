@@ -1,0 +1,24 @@
+# Tempelhueterin (2026-10-29): steht in der Mitte des Elfen-Tempels am Weltspawn (City.cpp, ohne Kugel).
+# Erzaehlt die Geschichte des Landes. teil=Nr;Quelle;Index;Datei;Skala;Pos(0/1);x;y;z
+name=tempelhueter
+basis=1
+groesse=0
+faktor=1.2
+feindlichkeit=3
+level=-1
+ausruestung=0
+wandern=0
+teil=0;3;-1;Teile\Elfen\elf-w3-kopf.cub;0;0;0;0;0
+teil=1;0;-1;;0;0;0;0;0
+teil=2;0;-1;;0;0;0;0;0
+teil=3;0;-1;;0;0;0;0;0
+teil=4;3;-1;Teile\Elfen\elf-w3-koerper.cub;0;0;0;0;0
+teil=5;0;-1;;0;0;0;0;0
+teil=6;0;-1;;0;0;0;0;0
+teil=7;0;-1;;0;0;0;0;0
+# sprechblase=: eine Zeile = eine Seite der Sprechblase (ersetzt den Text des Spiels, wenn man sie anspricht)
+sprechblase=Welcome, traveller. Let me tell you the story of this land.
+sprechblase=Long ago the High Elves watched over these lands. Their magic protected every forest, mountain and shore.
+sprechblase=Their temples are magical portals. Once they connected all corners of the land with one another.
+sprechblase=But the High Elves vanished, and with them their magic. Now the whole land is scrambled into pieces.
+sprechblase=Find our king, the last of the High Elves. He will reward you with great gifts.

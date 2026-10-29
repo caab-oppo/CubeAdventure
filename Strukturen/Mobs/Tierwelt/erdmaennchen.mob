@@ -1,0 +1,29 @@
+# Eigener Mob (LAB). teil=Nr;Quelle;Index;Datei;Skala;Pos(0/1);x;y;z
+# Quelle: 0 = von der Basisrasse, 1 = keins, 2 = nativer Registry-Index, 3 = eigene .cub
+# Basis Squirrel: Gelenke der Basis, Form/Gesicht eigen
+name=erdmaennchen
+basis=90
+groesse=0
+faktor=0.4
+feindlichkeit=1
+# friedlich wie die nativen Tiere (Huhn): Feindlichkeit 1 + Aussehensflag 0x10
+friedlich=1
+level=-1
+ausruestung=0
+wandern=1
+# eigene Rasse: Kennung (>= 200) und Name im Spiel; Skelett/Bewegung von der Basisrasse
+eigene_rasse=245
+rassen_name=Erdmaennchen
+rasse_setzen=1
+auto_ausrichtung=0
+fliegt=0
+teil=0;3;-1;..\Teile\Tierwelt\erdmaennchen-kopf.cub;1.2;1;0;1;8.44
+teil=1;1;-1;;0;0;0;0;0
+teil=2;3;-1;..\Teile\Tierwelt\erdmaennchen-haende.cub;0.75;1;7;0;4.44
+teil=3;3;-1;..\Teile\Tierwelt\erdmaennchen-fuesse.cub;0.8;1;4.8;-6.6;-6.9
+teil=4;3;-1;..\Teile\Tierwelt\erdmaennchen-koerper.cub;1;1;0;-5;-0.56
+teil=5;1;-1;;0;0;0;0;0
+teil=6;1;-1;;0;0;0;0;0
+teil=7;1;-1;;0;0;0;0;0
+gelenk=3;4;3.5;7
+gelenk_verlaengerung=6

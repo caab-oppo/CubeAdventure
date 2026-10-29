@@ -1,0 +1,30 @@
+# Eigener Mob (LAB). teil=Nr;Quelle;Index;Datei;Skala;Pos(0/1);x;y;z
+# Quelle: 0 = von der Basisrasse, 1 = keins, 2 = nativer Registry-Index, 3 = eigene .cub
+# Basis Camel: Gelenke der Basis, Form/Gesicht eigen
+name=kamel
+basis=99
+groesse=0
+faktor=1.4
+feindlichkeit=1
+# friedlich wie die nativen Tiere (Huhn): Feindlichkeit 1 + Aussehensflag 0x10
+friedlich=1
+level=-1
+ausruestung=0
+wandern=1
+# eigene Rasse: Kennung (>= 200) und Name im Spiel; Skelett/Bewegung von der Basisrasse
+eigene_rasse=246
+rassen_name=Kamel
+rasse_setzen=1
+auto_ausrichtung=0
+fliegt=0
+teil=0;3;-1;..\Teile\Tierwelt\kamel-kopf.cub;0.65;1;0;12;5.84
+teil=1;1;-1;;0;0;0;0;0
+teil=2;3;-1;..\Teile\Tierwelt\kamel-haende.cub;0.8;1;2.3;2.04;-2.03
+teil=3;3;-1;..\Teile\Tierwelt\kamel-fuesse.cub;0.75;1;2.17;-4.27;-2.48
+teil=4;3;-1;..\Teile\Tierwelt\kamel-koerper.cub;0.95;1;0;0;2.84
+teil=5;1;-1;;0;0;0;0;0
+teil=6;1;-1;;0;0;0;0;0
+teil=7;1;-1;;0;0;0;0;0
+gelenk=2;3.5;2.5;9
+gelenk=3;3.5;2.5;9
+gelenk_verlaengerung=1

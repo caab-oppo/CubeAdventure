@@ -1,0 +1,140 @@
+# Eigenes Biom fuer den AdventureMod (Biom-Werkstatt im LAB). Anleitung: BIOM_ANLEITUNG.md
+name=Sternmassiv mit nativer Stadt
+aktiv=0
+
+# Auswahl: Anteil in % der passenden Landzellen; klima 0 alle,1 gemaessigt,2 heiss,3 kalt,4 feucht,5 trocken
+anteil=10
+klima=0
+klima_setzen=0
+temperatur=0.50
+feuchte=0.50
+
+# Boden (bodentyp 0 = nativ, 4 Gras, 9 Sand, 10 Schnee, 12 Lava-Boden)
+boden=78,138,58
+boden2=60,118,46
+bodentyp=0
+staerke=0.90
+fels=128,124,120
+fels_an=1
+
+# Gelaende (Bloecke; Meeresspiegel 0 -- unter Hoehe 1 entsteht Wasser)
+terrain_an=1
+grundhoehe=200.0
+wellen=1.0
+wellen_groesse=300.0
+huegel_anteil=0.70
+huegel_hoehe=152.0
+huegel_groesse=350.0
+glaetten=1.00
+berge=0.75
+native_baeume=70
+
+# Fluesse und Seen (Wasser auf Gelaendehoehe)
+fluesse_nativ=1
+fluss_breite=1.50
+fluesse_eigen=1
+fluss_abstand=600
+seen_anteil=0.12
+seen_groesse=50
+
+# Bergzuege (Hoehe 0 = aus) und Schneegrenze (0 = aus)
+bergzug_hoehe=350
+bergzug_breite=250
+bergzug_abstand=1400
+bergzug_zacken=0.50
+schneegrenze=400
+
+# Freie Ebene in der Mitte jeder Biomzelle (Radius, Uebergang, Hoehe in Bloecken)
+ebene_an=1
+ebene_radius=1200
+ebene_rand=250
+ebene_hoehe=350
+# Stadt auf der Ebene: 0 keine, 1 Elfenstadt, 2 Zwergenstadt, 3 zufaellig je Zelle; Radius 0 = ganze Ebene
+stadt=0
+stadt_radius=0
+# Tierviertel der Stadt: Rassen-IDs in den Gehegen (leer = Schwein 33, Schaf 34, Kuh 100, Huhn 56)
+stadt_tiere=
+
+# Sternmassiv (Hochebene = Ebene oben; Bergring, sternfoermige Grate und Taeler mit Fluss und See)
+stern_an=1
+stern_arme=12
+stern_radius=6000
+stern_ring_hoehe=200
+stern_grat_hoehe=252
+stern_tal_breite=90
+stern_see_groesse=200
+
+# Grosse Hangbaeume (Versuche je Zone, 0 = aus; Groesse 0.6-1.6)
+hangbaeume=40
+hangbaum_groesse=1.00
+
+# Minenschaechte durch die Bergzuege (Anteil 0 = aus)
+minen_anteil=0.00
+minen_raster=700
+stollen_breite=5
+stollen_hoehe=5
+minen_seitengaenge=3
+minen_schaechte=1
+minen_holz=115,82,48
+minen_licht=255,214,120
+minen_schiene=95,95,105
+
+# Kreaturen: native Rassen-IDs (Mob-Labor), Anteil der ersetzten Landspawns
+rassen=47,108,111,28,87,115
+rassen_anteil=0.10
+mobs=
+mobs_max=6
+mobs_level=1
+# Schwierigkeit: modus 0 = Spielerlevel +- abweichung, 1 = feste Spanne min..max
+mobs_level_modus=1
+mobs_level_min=1
+mobs_level_max=1000
+mobs_level_abweichung=500
+spawner_rassen=0
+
+# Biome II: Spawnregeln am nativen Spawn. spawn=was;wo;gewicht;level_min;level_max;verhalten
+#  was: Zahl = native Rasse, sonst eigener Mob (Pfad unter Strukturen\Mobs ohne .mob)
+#  wo: leer = ueberall, land, wasser, wald, wiese, savanne, wueste, dschungel, schnee, gebirge, sumpf, kueste
+#  level 0 = nativ; verhalten 0 Standard, 1 friedlich, 2 feindlich
+spawn_anteil=70
+# Ueberschreibungen: tierwelt_anteil -1 = allgemein; tier_verhalten 0 nativ, 1 alle friedlich, 2 alle feindlich;
+# tier_level_modus 0 nativ, 1 feste Spanne, 2 nativ + versatz
+tierwelt_anteil=-1
+tier_verhalten=0
+tier_level_modus=0
+tier_level_min=1
+tier_level_max=10
+tier_level_versatz=0
+
+# Pflanzen (Versuche je Zone, Arten mit Gewicht)
+pflanzen_dichte=40
+pflanzen_arten=Baum:2,Busch:3,Pilz:0,Kristall:0,Kaktus:0,Halme:5
+stamm=92,64,40
+blatt=48,100,52
+akzent=230,230,240
+pflanzen_groesse=1.00
+pflanzen_dateien=
+pflanzen_dateien_gewicht=2
+pflanzen_dateien_aus=
+# Zonen-Modelle (Strukturen\Zonenmodelle): an = auch in diesem Biom, aus = hier nicht
+zonenmodelle_an=
+zonenmodelle_aus=
+
+# Dungeons (Anteil in % je Zone)
+dungeon_anteil=3
+dungeon_raeume=4
+dungeon_wand=110,105,100
+dungeon_boden=70,65,60
+dungeon_akzent=230,180,80
+dungeon_dach=1
+dungeon_verfall=0.30
+dungeon_rassen=109,111,17
+dungeon_mobs_dateien=
+dungeon_mobs=6
+dungeon_boss=1
+
+# Native Orte, die im Biom BLEIBEN (Ortstypen; fehlt einer, wird er abgeschaltet):
+#  1 Dorf, 2 Berg, 3 Wald, 4 See, 5 Ruinen, 6 Schlucht, 7 Tal, 8 Krater, 9 Hoehle, 10 Portal,
+#  11 Fels, 12 Baum, 13 Gipfel, 14 Burg/Katakomben/Palast/Tempel/Pyramide, 15 Insel (Kartennamen des Spiels)
+orte_erlaubt=
+bergdorf=1

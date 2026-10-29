@@ -1,0 +1,6 @@
+# Boss im Tempelteil
+art=boss
+gewicht=6
+max=99
+dach=1
+anschluss=gang,S,12,2

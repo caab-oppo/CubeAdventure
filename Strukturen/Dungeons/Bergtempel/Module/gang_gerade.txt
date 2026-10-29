@@ -1,0 +1,6 @@
+art=raum
+gewicht=16
+max=99
+dach=1
+anschluss=gang,S,2,2
+anschluss=gang,N,2,2

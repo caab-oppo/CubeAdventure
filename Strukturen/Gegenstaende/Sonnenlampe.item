@@ -1,0 +1,12 @@
+# Eigener Gegenstand (LAB -> Gegenstaende). Lampenstufe 4 (2026-10-19): Ergebnis des Werkbank-Rezepts;
+# im Inventar tauscht der Mod ihn sofort gegen eine echte Lampe (Typ 0x18) mit Seltenheit 4 = Lichtradius 42 Bloecke.
+name=Sonnenlampe
+aktiv=0
+art=0
+grundlage=0x0B,0x00,0x00
+level=1
+seltenheit=4
+modell=09_Leuchtpilz.cub
+kennung=23
+# wird_zu: im Inventar gegen diesen nativen Gegenstand tauschen (Typ, Unterart, Material, Seltenheit)
+wird_zu=0x18,0x00,0x00,4

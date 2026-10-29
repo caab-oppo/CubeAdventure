@@ -1,0 +1,23 @@
+# Apfelhain -- Felder 64 x 64 (Apfelbaum.cub), Heckenwege, wenige Monster, Kisten
+format=2
+name=Apfelhain
+aktiv=1
+anteil=1.5
+gebiet=ueberall
+boden=4
+typ=weg,8,5,2,44,104,40
+typ=aussen,8,5,2,44,104,40
+aussen=aussen
+module=6,8
+flaeche_min=128,128
+flaeche_max=236,236
+hoehe_max=0
+versuche=24
+# Bewohner: Pflanzenwesen, Rettich, Zwiebelchen, Hornisse -- Boss: Troll
+bewohner=69,70,71,53
+boss=108
+monster_anteil=50
+level=+0
+boss_level=+2
+uneben=14
+fundament=1

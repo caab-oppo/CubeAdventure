@@ -1,0 +1,7 @@
+art=raum
+gewicht=7
+max=1
+dach=0
+anschluss=weg,S,28,2
+anschluss=weg,O,28,2
+anschluss=weg,W,28,2

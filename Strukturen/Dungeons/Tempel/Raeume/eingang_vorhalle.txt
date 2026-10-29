@@ -1,0 +1,5 @@
+# Eingang, Tuer nach Sueden bleibt immer offen
+art=eingang
+tueren=N,O,S,W
+gewicht=10
+drehen=1

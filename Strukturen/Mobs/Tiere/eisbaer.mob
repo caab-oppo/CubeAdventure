@@ -1,0 +1,27 @@
+# Eigener Mob (LAB). teil=Nr;Quelle;Index;Datei;Skala;Pos(0/1);x;y;z
+# Quelle: 0 = von der Basisrasse, 1 = keins, 2 = nativer Registry-Index, 3 = eigene .cub
+# Basis Wolf: Gelenke der Basis, Form/Gesicht eigen
+name=eisbaer
+basis=28
+groesse=0
+faktor=1.6
+feindlichkeit=1
+level=-1
+ausruestung=0
+wandern=1
+# eigene Rasse: Kennung (>= 200) und Name im Spiel; Skelett/Bewegung von der Basisrasse
+eigene_rasse=206
+rassen_name=Eisbaer
+rasse_setzen=1
+auto_ausrichtung=0
+teil=0;3;-1;..\Teile\Tiere\eisbaer-kopf.cub;0.8;1;0;10.8;3.15
+teil=1;1;-1;;0;0;0;0;0
+teil=2;3;-1;..\Teile\Tiere\eisbaer-haende.cub;0.9;1;2.55;0.83;-5.5
+teil=3;3;-1;..\Teile\Tiere\eisbaer-fuesse.cub;0.9;1;2.55;-3.08;-3.7
+teil=4;3;-1;..\Teile\Tiere\eisbaer-koerper.cub;1.2;1;0;0;0.65
+teil=5;1;-1;;0;0;0;0;0
+teil=6;1;-1;;0;0;0;0;0
+teil=7;1;-1;;0;0;0;0;0
+gelenk=2;3.5;2;7
+gelenk=3;3.5;2.5;9
+gelenk_verlaengerung=2

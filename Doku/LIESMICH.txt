@@ -1,0 +1,39 @@
+Cube Adventure -- Mod fuer Cube World Alpha
+==========================================
+
+INSTALLATION
+1. Inhalt dieses Pakets in den Cube-World-Alpha-Ordner kopieren (dort, wo Cube.exe liegt):
+     Mods\AdventureMod.dll
+     Strukturen\            (alle Inhalte des Mods: Biome, Staedte, Mobs, Rezepte, Skills ...)
+2. Das Spiel mit einem Mod-Starter starten, der DLLs aus dem Ordner "Mods" laedt
+   (z. B. CubeModLauncher). Cube.exe allein laedt keine Mods.
+3. Keine weiteren Voraussetzungen: kein Visual C++ Redistributable, keine DirectX-Runtime
+   (die Laufzeit steckt in der DLL, Texte nutzen die Schrift des Spiels).
+
+TASTEN
+  F9    Koordinaten unten rechts ein/aus
+  F10   LAB (Editor-Fenster) ein/aus do not use
+  U     Runenstein ablegen (mit Namen); neben einem Stein: aufheben
+  6     zum Runenstein teleportieren; bei mehreren: Liste (6 = weiter, P = teleportieren)
+  5     Skill Beschwoeren (die zuletzt besiegten Gegner kaempfen fuer dich)
+ 
+INHALT (Auszug)
+
+TIERWELT (150 neue Tiere)
+  50 Land-, 50 Luft- und 50 Wassertiere (Strukturen\Mobs\Tierwelt), jedes mit eigener Rasse. Sie erscheinen
+  um dich herum passend zum Lebensraum: Wald, Wiese, Savanne, Wueste, Dschungel, Schnee, Gebirge, Sumpf, Kueste;
+  im Wasser nach Tiefe (Suesswasser, Riff, Meer, Tiefsee). Wassertiere schwimmen, Voegel und Insekten fliegen.
+  Ausschalten: in AdventureMod_schalter.cfg die Zeile tierwelt=0. Neu erzeugen: Werkzeuge\Mobs\tierwelt.py.
+  Vorschau: Strukturen\Mobs\Vorschau\tierwelt_1..6.png. Stand im LAB: Reiter 'Netz & Shader'.
+
+DEINSTALLATION
+  Mods\AdventureMod.dll und den Ordner Strukturen loeschen. Die Spielstaende bleiben spielbar;
+  Zonen, die der Mod veraendert hat, sehen danach wieder wie im Original aus, sobald sie neu
+  erzeugt werden.
+
+BEKANNTE GRENZEN
+  - Nur fuer die Cube.exe von Cube World Alpha (32 Bit). Passt eine Stelle nicht, schaltet der
+    Mod den betroffenen Teil ab und schreibt es in AdventureMod_log.txt.
+  - Einige Tiere (Pegasus-Fluegel, Zentaur, Schlangenmensch) sind im Mob-Labor nachjustierbar.
+
+Lizenzen: siehe Ordner Lizenzen.

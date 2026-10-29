@@ -1,0 +1,18 @@
+# Eigener Mob (LAB). teil=Nr;Quelle;Index;Datei;Skala;Pos(0/1);x;y;z
+# Quelle: 0 = von der Basisrasse, 1 = keins, 2 = nativer Registry-Index, 3 = eigene .cub
+name=elf-w4
+basis=1
+groesse=0
+faktor=1.2
+feindlichkeit=3
+level=-1
+ausruestung=0
+wandern=1
+teil=0;3;-1;Strukturen\Mobs\Elfen\elf-w4-kopf.cub;0;0;0;0;0
+teil=1;0;-1;;0;0;0;0;0
+teil=2;0;-1;;0;0;0;0;0
+teil=3;0;-1;;0;0;0;0;0
+teil=4;3;-1;Strukturen\Mobs\Elfen\elf-w4-koerper.cub;0;0;0;0;0
+teil=5;0;-1;;0;0;0;0;0
+teil=6;0;-1;;0;0;0;0;0
+teil=7;0;-1;;0;0;0;0;0
