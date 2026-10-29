@@ -32,6 +32,7 @@ Cube Adventure erweitert **Cube World Alpha** (2013, 32 Bit) um eigene Biome, El
 | 5 | Beschwören (die zuletzt besiegten Gegner kämpfen kurz für dich) |
 | X | Skillfenster: Teleport und Beschwören stehen im nativen Baum |
 | R | Tempelkugel berühren |
+| RMT | Marker setzen/löschen |
 
 Der Teleport wird beim **Hochelfenkönig** im Mutterbaum der Elfenstadt freigeschaltet. Ab **25 gefundenen Tempeln** bringt dich jede Tempelkugel direkt zu ihm.
 
