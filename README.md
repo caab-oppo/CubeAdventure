@@ -16,6 +16,7 @@ Cube Adventure expands **Cube World Alpha** (2013, 32-bit) with custom biomes, e
    README.txt
    ```
 3. Launch the game using a **mod launcher** that loads DLLs from the `Mods` folder (e.g., CubeModLauncher). `Cube.exe` alone does not load mods.
+   I used https://github.com/coremaze/Cube-World-Mod-Launcher/releases/tag/v1.5
 
 **Requirements:** None. No Visual C++ Redistributable or DirectX Runtime required.
 
